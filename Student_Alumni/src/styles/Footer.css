@@ -1,0 +1,35 @@
+/* src/styles/Footer.css */
+
+.app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* PROFESSIONAL IMPROVEMENT: Subtle linear gradient background */
+  background: linear-gradient(180deg, #f0f2f5 0%, #e8eaf1 100%); /* A very light, subtle gradient */
+  color: #555; /* A slightly darker text color for contrast */
+  font-size: 0.85rem; /* Compact font size */
+  padding: 0.8rem 1rem; /* Compact padding */
+  flex-shrink: 0; /* Prevent footer from shrinking in flex parent */
+  width: 100%; /* Ensure it spans full width */
+  box-sizing: border-box; /* Include padding in width */
+  /* PROFESSIONAL IMPROVEMENT: Refined box-shadow for depth */
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.05), 0 -1px 3px rgba(0,0,0,0.02); /* Softer, multi-layer shadow */
+  font-family: 'Inter', sans-serif; /* Ensure consistent font */
+  border-top: 1px solid rgba(0, 0, 0, 0.05); /* Subtle top border for separation */
+}
+
+/* Enhancing the paragraph text within the footer */
+.app-footer p {
+  margin: 0; /* Remove default paragraph margin */
+  line-height: 1.2; /* Tighter line height for compact text */
+  opacity: 0.9; /* Slightly reduce opacity for a softer look */
+}
+
+/* Responsive adjustments for even smaller footer on mobile */
+@media (max-width: 600px) {
+  .app-footer {
+    font-size: 0.75rem; /* Even smaller font size on mobile */
+    padding: 0.6rem 0.8rem; /* Even more compact padding on mobile */
+  }
+}
